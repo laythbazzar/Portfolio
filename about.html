@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <h1>Layth Bazzar</h1>
         <div style="display: flex; gap: 25px; align-items: center;">
             <div style="display: flex; gap: 20px;">
-                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode"  onclick="changeMode()">
+                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode" onclick="changeMode()">
                 <a class="current-page" href="index.html">Home</a>
                 <a href="about.html">About Me</a>
                 <a href="skills.html">My Skills</a>
                 <a href="contact.html">Contact Me</a>
-                
-            </div >
-            <a class="theme-invert" style="margin-right: 20px;" href="#">C.V.</a>
+
+            </div>
+            <a class="theme-invert" style="margin-right: 20px;" href="https://drive.google.com/file/d/1ohLtVlCEffId5-2rQS741AwSEsh7S641/view?usp=sharing">C.V.</a>
         </div>
     </nav>
     <main>
@@ -27,18 +29,39 @@
             <img class="circle-photo" src="assests/Pics/laythface.jpeg" alt="A professional photo of Layth in a suit">
             <h1>Layth Bazzar</h1>
             <p class="pale-text"></p>
+
+            <p style="margin-bottom: .8em;">Recent graduate with a Bachelor's degree in Computer Engineering, with a
+                strong
+                foundation in AI and machine learning demonstrated through my graduation project "Temporal Action
+                Segmentation from Timestamp Supervision." In addition, I bring hands-on experience in DevOps through
+                training in Linux (RHEL), Docker, and Kubernetes. Currently expanding my expertise in full-stack
+                development
+                and Flutter, aiming to combine skills across AI, DevOps, and software engineering to build scalable,
+                intelligent applications.</p>
+
         </div>
-        <p style="margin-bottom: .8em;">Recent graduate with a Bachelor's degree in Computer Engineering, with a strong foundation in AI and machine learning demonstrated through my graduation project "Temporal Action Segmentation from Timestamp Supervision." In addition, I bring hands-on experience in DevOps through training in Linux (RHEL), Docker, and Kubernetes. Currently expanding my expertise in full-stack development and Flutter, aiming to combine skills across AI, DevOps, and software engineering to build scalable, intelligent applications.</p>
         <h1>Education</h1>
-        <p>Bachelor's degree in Computer Enginnering, Birzeit University</p>
+        <!-- Bachelor's Degree -->
+        <h2 class="text-no-margin">Bachelor's degree in Computer Enginnering, Birzeit University</h2>
         <p class="text-secondary">2018 - 2024</p>
-        <p>Full-Stack Development, Axsos Academy</p>
+        <!-- BootCamp -->
+        <h2 class="text-no-margin">Full-Stack Development, Axsos Academy</h2>
         <p class="text-secondary" style="margin-bottom: .8em;">2025 June - October</p>
+
         <h1>Experience</h1>
+        <!-- First Experinec -->
+        <h2 class="text-no-margin">DevOps Intern - Exalt Technologies</h2>
+        <p class="text-secondary text-no-margin">Oct 2022 - Feb 2023</p>
+        <p>Worked with Docker, Kubernetes, and Linux (RHEL) to deploy and manage containerized applications</p>
+        <!-- Second Experinece -->
+        <h2 class="text-no-margin">Prompt Engineer - Fratello Software House</h2>
+        <p class="text-secondary text-no-margin">Apr 2024 - May 2024</p>
+        <p>Designed and tested prompts for an LLM used by developers, improving accuracy and efficiency</p>
     </main>
     <footer>
         <p>@ 2025 Layth Bazzar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

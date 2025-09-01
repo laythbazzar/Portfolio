@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <h1>Layth Bazzar</h1>
         <div style="display: flex; gap: 25px; align-items: center;">
             <div style="display: flex; gap: 20px;">
-                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode"  onclick="changeMode()">
+                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode" onclick="changeMode()">
                 <a class="current-page" href="index.html">Home</a>
                 <a href="about.html">About Me</a>
                 <a href="skills.html">My Skills</a>
                 <a href="contact.html">Contact Me</a>
-                
-            </div >
-            <a class="theme-invert" style="margin-right: 20px;" href="#">C.V.</a>
+
+            </div>
+            <a class="theme-invert" style="margin-right: 20px;" href="https://drive.google.com/file/d/1ohLtVlCEffId5-2rQS741AwSEsh7S641/view?usp=sharing">C.V.</a>
         </div>
     </nav>
     <main>
+        <h1>Contact Me</h1>
+        <p class="text-secondary">Interested in collaborating or just want to say hi? feel free to reach out using the
+            form blow or connect with me directly.</p>
+        <div class="contact-container">
+            <!-- COntact Form -->
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn theme-invert">Send Message</button>
+            </form>
+            <!-- Contact Directly -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Email:</strong> <a href="mailto:laythbazzar8@gmail.com">laythbazzar8@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+970592206460">+970 592 206 460</a></p>
+                <p><strong>Location:</strong> Ramlallah, Palestine</p>
+                <div class="social-links">
+                    <a href="https://github.com/laythbazzar">Github</a>
+                    <a href="https://www.linkedin.com/in/layth-bazzar-2a0b3b287">LinkedIn</a>
+                </div>
+        </div>
     </main>
+    <footer>
+        <p>@ 2025 Layth Bazzar. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

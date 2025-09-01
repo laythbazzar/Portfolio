@@ -14,18 +14,71 @@
         <h1>Layth Bazzar</h1>
         <div style="display: flex; gap: 25px; align-items: center;">
             <div style="display: flex; gap: 20px;">
-                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode"  onclick="changeMode()">
+                <img id="mode-icon" src="assests/Icons/moon.svg" alt="change-mode" onclick="changeMode()">
                 <a class="current-page" href="index.html">Home</a>
                 <a href="about.html">About Me</a>
-                <a href="skills.html">My Skills</a>
+                <a href="skills.html">My Skills & Project</a>
                 <a href="contact.html">Contact Me</a>
-                
-            </div >
-            <a class="theme-invert" style="margin-right: 20px;" href="#">C.V.</a>
+
+            </div>
+            <a class="theme-invert" style="margin-right: 20px;" href="https://drive.google.com/file/d/1ohLtVlCEffId5-2rQS741AwSEsh7S641/view?usp=sharing">C.V.</a>
         </div>
     </nav>
     <main>
+        <section style="margin-bottom: 10px; margin-top: 20px;">
+            <h1 style="margin-bottom: 0.5em;">My Skills</h1>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <h2>Programming Languages</h2>
+                    <p>Python, C, Java, Javascript</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <h2>Web & Mobile Development</h2>
+                    <p>HTML5, CSS3, Node.js, Android Studio, Flutter(Currently Learning)</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <h2>DevOps & Cloud</h2>
+                    <p>Linux, Docker, Kubernetes, Git</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <h2>AI & ML </h2>
+                    <p>Machine Learning, Deep Learning, Temporal Action Segementaion </p>
+                </div>
+                <div class="skill-card fade-in">
+                    <h2>Databases</h2>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <h2>Networking</h2>
+                    <p>Network Infrastructure</p>
+                </div>
+            </div>
+        </section>
+        <section class="fade-in">
+            <h1 style="margin-bottom: 0.5em;">My Projects</h1>
+            <div class="projects-grid">
+
+                <div class="project-card fade-in">
+                    <h2>Temporal Video Action Segmentation using Timestamp Supervision</h2>
+                    <p>Used MS-TCN with timestamp supervision and DTW to accurately segment and classify actions in
+                        videos with minimal labels.</p>
+                    <a href="https://youtu.be/z1huzW-Pw3w">Demo</a>
+                </div>
+                <div class="project-card fade-in">
+                    <h2>Portfolio Website</h2>
+                    <p>Built a responsive personal portfolio with HTML, CSS, and JavaScript, featuring a dark/light
+                        theme toggle and smooth navigation to showcase skills, projects, and contact info.</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <a href="https://laythbazzar.github.io/Portfolio/index.html">Demo</a>
+                        <a href="https://github.com/laythbazzar/Portfolio">Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>@ 2025 Layth Bazzar. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 

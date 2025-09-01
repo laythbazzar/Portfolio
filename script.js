@@ -2,7 +2,6 @@ const root = document.documentElement;
 const modeBtn = document.getElementById("mode-icon");
 const contactForm = document.querySelector('.contact-form');
 
-// Dark/Light Mode
 let savedTheme = localStorage.getItem("data-theme");
 if (savedTheme) {
     root.setAttribute("data-theme", savedTheme);
@@ -20,7 +19,6 @@ function changeMode() {
     modeBtn.src = newTheme === "dark" ? "assests/Icons/sun.svg" : "assests/Icons/moon.svg";
 }
 
-// Contact Form Submission
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -29,7 +27,6 @@ if (contactForm) {
     });
 }
 
-// Fade-in for sections
 document.addEventListener('DOMContentLoaded', () => {
     const faders = document.querySelectorAll('.fade-in');
 
@@ -44,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, {
         root: null,
         threshold: 0.2,
-        rootMargin: "-70px 0px 0px 0px" // Hide as soon as it touches the navbar
+        rootMargin: "-70px 0px 0px 0px"
     });
 
     faders.forEach(fader => observer.observe(fader));
